@@ -1,0 +1,114 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Objects</title>
+        </head>
+        <body>
+        <script>
+            //The following code represents Object Creation 
+            const person={
+                name:'Srikanth',
+                age:19,
+                Qualification:'Degree'
+            };
+            console.log(person);  
+            
+            console.log(person.name);
+
+            console.log(person.age);
+
+            //example for built-in objects
+            const saving={
+                Name:'Anjali',
+                Age:6,
+                savings:0,
+                father:function savings(){
+                    let salary=15000;
+                    let save=5000;;
+                    console.log(`Salary Of the the Father:${salary}.Savings:${save}`);
+                },
+                transportCost:'1200',
+                ['fees-pay']:0
+            }
+            //Don't forget to put the paranthesis
+            console.log(saving.father());
+            console.log(saving['transportCost']);
+            console.log(saving['fees-pay']);
+
+            //if we take console.log WHERE,console is a object And log is a function Similarly Math.random()
+
+            //Diff b/w Json and object creations In Json we can't add FUNCTIONS and SINGLE QUOTES
+
+            //lets know about json,use this"JSON.stringify"
+
+            console.log(JSON.stringify(saving));
+
+            //to convert into original form JSON.parse() function
+
+            console.log(JSON.parse(JSON.stringify(saving)));
+
+            const product={
+                name:'Ring',
+                cost:3000,
+                'Delivery-Time':'2 days',
+                rating:{
+                    stars:4.5,
+                    count:2
+                }  
+            };
+            console.log(product.name);
+            console.log(product['Delivery-Time']);
+            console.log(product.rating.stars);
+//shorthand methods
+
+            console.log('Srikanth'.length);
+            console.log('age'.toUpperCase());
+
+            let object1={
+                name:'Srikanth',
+                gender:'male'
+            };
+            const object2=object1;
+
+            object1.name='Virat';
+            console.log(object1.name);
+            console.log(object2);
+
+            /*let object3='virat';
+            if(object1===object3){
+                console.log('Yeah you are right!')
+            }else{
+                console.log('No you are Wrong!')
+
+            }*/
+
+            console.log(object1.name===object2);
+            console.log(object2===object1)
+            /*if(object1===object2){
+                console.log('Yeah you are right!')
+            }else{
+                console.log('No you are Wrong!')
+
+            }*/
+            const object={
+                name:'rohit!',
+                profession:'cricket'
+            };
+            //const name=object.name;
+            const {name,profession} =object;
+            console.log(name);
+            console.log(profession);
+
+            const object5={
+                name,
+                //method:function function1(){
+                  //  console.log('Elephant foot Yam');
+                method(){
+                    console.log('Elephant foot Yam');
+                }
+                };
+                console.log(object5.method());
+        </script>
+     
+        </body>
+    </html>

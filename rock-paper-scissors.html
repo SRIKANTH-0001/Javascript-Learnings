@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+        <title>Rock Paper Scissors </title>
+    </head>
+    <body>
+        <p>Rock Paper Scissors </p>
+        <button onclick="
+            playGame('Rock');
+            ">Rock
+        </button>
+            
+        <button onclick="
+            playGame('Paper');
+            ">Paper
+        </button>
+
+        <button onclick="
+            playGame('Scissers');
+            ">Scissors
+        </button>
+
+
+
+
+        <script>
+            function playGame(playerMove){
+                const computerMove=SelectComputerMoveR();
+                let result='';
+                if (playerMove==='Rock'){
+                    if(computerMove==='Rock'){
+                        result='Tie.';
+                    }else if(computerMove==='Paper'){
+                        result='You Lose.Try Again!';
+                    }else{
+                        result='You Win.';
+                    }
+
+                }else if(playerMove==='Paper'){
+                    if(computerMove==='Rock'){
+                        result='You Win.';
+                    }else if(computerMove==='Paper'){
+                        result='Tie';
+                    }else{
+                        result='You Win.';
+                    }
+                }else if(playerMove==='Scissers'){
+                    if(computerMove==='Rock'){
+                        result='You Win.';
+                    }else if(computerMove==='Paper'){
+                        result='You Lose.Try Again!';
+                    }else{
+                        result='Tie.';
+                    }
+                    
+                }
+                alert(`You Picked ${playerMove}.Computer Picked ${computerMove}.${result}`);
+            }
+            function SelectComputerMoveR(){
+                const randomNumber=Math.random();
+                let computerMove='';
+                if(randomNumber >=0 && randomNumber <1/3){
+                    computerMove='Rock';
+                }else if(randomNumber >=1/3 && randomNumber <2/3){
+                    computerMove='Paper';
+                }else if(randomNumber >=2/3 && randomNumber <1){
+                    computerMove='Scissors';
+                }
+            
+                return computerMove;
+            }
+           
+
+
+            
+               
+        </script>
+    </body>
+</html>

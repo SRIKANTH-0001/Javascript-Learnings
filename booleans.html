@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Booleans</title>
+    </head>
+    <body>
+
+          <script>
+            //comparision operators
+            //the math operators takes highest priority than comparision operators
+            console.log(typeof 'true');
+            console.log(2>5);
+            console.log('2'===5);
+            console.log('2'!=0.2);
+
+            //contitional statements
+
+            //if
+            if(false){
+              console.log(5);
+            }
+          
+            //lets move on to real tme Example
+            //if and else statements
+            var age=35;
+            if(age >=16){
+              console.log('You have the rights to Drive');
+            }else{
+              console.log('You don\'t have the rights to Drive');
+            }
+           
+            //if ,else if and else statements
+            var age=15;
+            if(age >=16){
+              console.log('Congrats!!');
+              console.log('You got the rights to Drive!');
+            }else if(age===15){
+              console.log('Almost there to get the rights for driving!');
+            }
+            else{
+              console.log('You don\'t have the rights to Drive');
+            }
+
+            if(true && true){
+              console.log('And Gate');
+            }
+
+            console.log(0.2>=0 && 0.2<1/3)
+
+            if(true || false){
+              console.log('Or Gate');
+            }
+            if(false || false){
+              console.log('Or Gate with both false');
+            }
+            
+            //truthy and falsy vlaues
+            /*--falsy Values Means
+                1."" 2.0 3.undefined 4.null 5.NaN
+              --truthy value
+                except above values ,all are truthy values
+              */
+
+              let hello=587;;
+              if(hello){
+                console.log("It's a Truthy Value");
+              }
+
+            let hello1=undefined;
+              console.log(hello1);
+            
+            let hello2='';
+              console.log(hello2);
+
+            let hello3=null;
+              console.log(hello3);
+            
+            //Instead of if and else staments We can use
+
+            const result=true ? 'It is truthy':'falsy';
+              console.log(result);
+
+            const result1=false ? 'It is truthy':'falsy';
+              console.log(result1);
+            
+              const result11=55 ? 'It is 55':'It is not 55';
+              console.log(result11);
+            
+              const currency='USD'||'RUP';
+              console.log(`This is your Currrency ${currency}`);
+
+              const currency1=undefined||'RUP';
+              console.log(`This is your Currrency ${currency1}`);
+          </script>  
+    </body>
+</html>

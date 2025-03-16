@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Cart Quantity</title>
+    </head>
+    <body>
+        <button onclick="console.log(`Cart Quantity:${cartQuantity}`);">Show quantity</button>
+
+        <button onclick="
+        cartQuantity=cartQuantity+1;
+        //Instead of this we can also use:cartQuantity+=1;
+        //aAnd this also cartQuantity++;
+        console.log(`Cart Quantity:${cartQuantity}`);">Add To Cart</button>
+
+        <button onclick="
+        cartQuantity=cartQuantity+2;
+        //Instead of this we ac use:cartQuantity+=2
+        console.log(`Cart Quantity:${cartQuantity}`);">+2</button>
+
+        <button onclick="
+        cartQuantity=cartQuantity+3;
+        //Instead of this we ac use:cartQuantity+=3
+        console.log(`Cart Quantity:${cartQuantity}`);">+3</button>
+
+        <button onclick="
+        cartQuantity=cartQuantity+4;
+        //Instead of this we ac use:cartQuantity+=3
+        console.log(`Cart Quantity:${cartQuantity}`);">+4</button>
+
+        <button onclick="
+        cartQuantity=cartQuantity+5;
+        //Instead of this we ac use:cartQuantity+=3
+        console.log(`Cart Quantity:${cartQuantity}`);">+5</button>
+
+        <button onclick="
+        cartQuantity=cartQuantity-2;
+        //Instead of this we ac use:cartQuantity+=3
+        console.log(`Cart Quantity:${cartQuantity}`);">-2</button>
+
+        <button onclick="
+        cartQuantity-=4;
+        console.log(`Cart Quantity:${cartQuantity}`)
+        ">-4</button>
+
+        <button onclick="
+         console.log(alert('Are you Sure? Do you want to reset the Cart Quantity?'));
+        cartQuantity=0;
+        console.log(`Cart was Reset.`);
+        console.log(`Cart Quantity:${cartQuantity}`);
+       
+        ">Restore Cart</button>
+
+        <script>
+            let cartQuantity=0;
+
+            var name='Srikanth';
+            console.log(typeof cartQuantity);
+            console.log(typeof name);
+            console.log(name);
+         
+            console.log(`My Name Is :${name}`);
+            console.log(`And My mark is:${cartQuantity}`);
+
+            let coffee=5;
+            let bagels=3;
+            let soup=9;
+
+            const cost=coffee + (bagels*2) + soup
+            console.log(`Total cost of your purchase is:${cost}`);
+
+            //wait wait noew i found like, our restaurat put 10% of tax
+
+            var newcost=(cost*0.1)
+            console.log(`The included tax is:${newcost}`);
+
+            var totalcost=newcost+cost;
+            console.log(`The total purchase cost is:${totalcost}`); 
+
+            
+        </script>
+    </body>
+</html>

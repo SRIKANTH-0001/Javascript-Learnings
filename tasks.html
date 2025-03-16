@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Project</title>
+    </head>
+    <body>
+
+        <button class="button1">9a</button>
+        <button class="button2">9b</button>
+
+
+        <button onclick="
+            document.querySelector('.chosen').innerHTML=`You Picked:Heads`;
+        ">heads</button>
+        <button onclick="
+            document.querySelector('.chosen').innerHTML=`You Picked:Tails`;
+        
+        ">Tails</button>
+
+        <p class="chosen"></p>
+
+        <input placeholder="Type your Name.." class="output" onkeydown="
+            if (event.key=='Enter'){
+                const inputElement=document.querySelector('.output');
+                document.querySelector('.name').innerHTML=`your Name Is:${inputElement.value}`
+            }
+        ">
+        <button  onclick="
+                //let inputElement=document.querySelector('.output');
+                
+                //document.querySelector('.name').innerHTML=`your Name Is:${inputElement.value}`
+        
+        
+        
+        ">Submit</button>
+
+        <p class="name"></p>
+
+            <input placeholder="write something..." class="input" onkeyup="
+            const inputElement=document.querySelector('.input');
+            
+            document.querySelector('.onkey').
+            innerHTML=`${inputElement.value}` ">
+
+
+
+        <p class="onkey"></p>
+        <script>
+            document.querySelector('.button1').innerHTML='Are you complted the task!';
+
+           document.querySelector('.button2').innerHTML='9b is done!';
+        </script>
+        
+    </body>
+</html>

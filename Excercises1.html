@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Functions</title>
+    </head>
+    <body>
+        <script>
+            //task1
+            const product1={
+            name:'baseketball',
+            cost:2095,
+            'delivery-time':'3 days'
+           };
+            console.log(product1);
+            console.log(product1.cost+500);
+            console.log(product1['delivery-time']);
+
+            const product2={
+            name:'baseketball',
+            cost:2300,
+            'delivery-time':'4 days'
+           };
+           //task2
+           function MinCost(product1,product2){
+            if (product1.cost<product2.cost){
+                console.log('You can choose product1.Bcuz,It\'s Low cost!');
+            }else{
+                    comsole.log('You better to buy the Product2 Due to the low cost!');
+            }
+           };
+
+           MinCost(product1,product2);
+           ///task 3
+           function isSameproduct(product1,product2){
+            if (product1.name===product2.name &&
+                product1.cost===product2.cost){
+                return 'true';
+            }else{
+                return 'false';
+            }
+           };
+           //task 4
+           console.log(isSameproduct(product1,product2));
+
+           const product3={
+                name:'baseketball',
+                cost:2095
+           }
+
+           function isSameProduct(product1,product3){
+            return (
+                product1.name===product3.name &&
+                product1.cost===product3.cost
+            );
+           }
+            console.log(isSameProduct(product1,product3));
+
+
+            const str='Good Morning!';
+            console.log(str.toLowerCase());
+
+            //const name='Srikanth';
+            //let repeat=name.repeat(5);
+            //console.log(repeat);
+
+            const name='Srikanth';
+            let repeat=(name+" ").repeat(5).trim();
+            console.log(repeat);
+
+
+
+            //tasks
+
+            
+        </script>
+       
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arrays & Loops</title>
+</head>
+<body>
+    <script>
+        const Arr=
+    [
+        12,
+        13,
+        24,
+        12
+    ];
+        console.log(Arr);
+        //it allows the duplicate values
+        console.log(Arr[0]);
+        console.log(Arr[3]);
+        Arr[3]=11;
+        //Afer changing of Array 3rd Index
+        console.log(Arr[3]);
+
+        const arr2=[10,15,15,{name:'Srikanth',Qualification:'Degree'},[10,100,1000]];
+        console.log(arr2[3]);
+        //to identify the length of the array
+        console.log(arr2.length);
+        //console.log(arr[0:3])
+
+        //use of push method,if we use that then it will add the value at the end
+        arr2.push(5);
+        console.log(arr2);
+
+        //Use of Splice() method
+        arr2.splice(5,1);
+        console.log(arr2);
+
+        //loops
+
+        let i=2;
+
+        while(i<=5){
+            console.log(i);
+        }
+    </script>
+</body>
+</html>

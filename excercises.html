@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+        <title>Advanced Excercises </title>
+    </head>
+    <body>
+        
+            <button onclick="
+            let answer='';
+            const randomNum=Math.random();
+            if(randomNum<=0.5 && randomNum>=0.1){
+                answer='Heads';
+            }else if(randomNum<1 && randomNum>0.5){
+               answer= 'Tails';
+            }
+            console.log(`The Result Is:${answer}`)
+            
+            ">Click Me</button>
+            
+        <script>
+            const hour=13;
+            let state='';
+            const name='Srikanth';
+            if(hour<=12 &&hour>=6){
+                state='Good Morning!';
+            }else if(hour>=13 && hour<=17){
+                state='Good AfterNoon!';
+            }else{
+                state='Good Night!';
+            }
+
+            console.log(`Message is:: ${state}>>>${name}`);
+
+            const age=7;
+            let state1='';
+            if(age<=10 &&age>=1){
+                state1='My shop Gives some Discount for you child!';
+            }else if(age>=65 && hour<=100){
+                state1='You Deserve More Discount!';
+            }else{
+                state1=' You have to pay full Amount!';
+            }
+
+            console.log(`Your Age is:${age}.So,${state1}`)
+                
+
+            const day='Holiday';
+            const age1=7;
+            let state11='';
+            console.log(age>=65 && age<=6 || day==='Holiday'?'You Deserve More Discount My dear !':' You have to pay full Amount!');
+
+            /*if(age>=65 && age<=6 || day==='Holiday'){
+               state11='You Deserve More Discount My dear !';
+           }else{
+               state11=' You have to pay full Amount!';
+           }
+               console.log(`Your Age is:${age}.and Today ia a ${day}.So,${state11}`)*/
+
+               
+        
+        </script>
+    </body>
+</html>
